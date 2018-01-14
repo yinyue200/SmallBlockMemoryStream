@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallBlockMemoryStream", "SmallBlockMemoryStream\SmallBlockMemoryStream.csproj", "{97CC8BA2-A3F2-403C-9DE1-1CBD89B1EEB6}"
 EndProject
@@ -12,7 +12,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{797DA0
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallBlockMemoryStream.Benchmark", "SmallBlockMemoryStream.Benchmark\SmallBlockMemoryStream.Benchmark.csproj", "{84223A0F-D5F0-447B-B6E4-22278170B208}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallBlockMemoryStream.netstandard", "SmallBlockMemoryStream.netstandard\SmallBlockMemoryStream.netstandard.csproj", "{7F0B42FC-727B-4C75-A686-8576BE3FF55C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SmallBlockMemoryStream.Shared", "SmallBlockMemoryStream.Shared\SmallBlockMemoryStream.Shared.shproj", "{604FEAF8-C81C-4D76-8380-01E06B7D211C}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SmallBlockMemoryStream.Shared\SmallBlockMemoryStream.Shared.projitems*{604feaf8-c81c-4d76-8380-01e06b7d211c}*SharedItemsImports = 13
+		SmallBlockMemoryStream.Shared\SmallBlockMemoryStream.Shared.projitems*{97cc8ba2-a3f2-403c-9de1-1cbd89b1eeb6}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -26,8 +36,19 @@ Global
 		{F2FD4533-A574-486D-8B8A-968D1411516F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2FD4533-A574-486D-8B8A-968D1411516F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2FD4533-A574-486D-8B8A-968D1411516F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84223A0F-D5F0-447B-B6E4-22278170B208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84223A0F-D5F0-447B-B6E4-22278170B208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84223A0F-D5F0-447B-B6E4-22278170B208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84223A0F-D5F0-447B-B6E4-22278170B208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F0B42FC-727B-4C75-A686-8576BE3FF55C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0B42FC-727B-4C75-A686-8576BE3FF55C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0B42FC-727B-4C75-A686-8576BE3FF55C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0B42FC-727B-4C75-A686-8576BE3FF55C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBF17212-8EC7-4C19-B388-FDE0CA9C3C61}
 	EndGlobalSection
 EndGlobal

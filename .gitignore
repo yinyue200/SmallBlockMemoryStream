@@ -181,3 +181,6 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+/.vs
+/src/.vs/SmallBlockMemoryStream/v15/Server/sqlite3
+/src/SmallBlockMemoryStream.Benchmark/BenchmarkDotNet.Artifacts/results

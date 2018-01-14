@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <AssemblyName>SmallBlockMemoryStream</AssemblyName>
+    <RootNamespace>Aethon.IO</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="..\SmallBlockMemoryStream.Shared\SmallBlockMemoryStream.Shared.projitems" Label="Shared" />
+
+</Project>
